@@ -24,7 +24,7 @@ elForm.addEventListener("submit", function (evt) {
   }
   else if (selectValue === "Fahrenheit") {
     elResult.setAttribute("class", "text-success")
-    elResult.textContent = `Formula: (${celsius}℃ * 9/5) = ${formulCelFahr.toFixed(2)}F`;
+    elResult.textContent = `Formula: (${celsius}℃ * 9/5) + 32 = ${formulCelFahr.toFixed(2)}F`;
   }
   else if (isNaN(selectValue)) {
     elResult.setAttribute("class", "text-danger")
