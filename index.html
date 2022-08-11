@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Js temperature</title>
+</head>
+
+<body>
+  <main>
+    <section class="temperature">
+      <div class="temperature__container container">
+        <div class="temperature__inner mx-auto">
+          <h1 class="temperature__title display-6 text-center mb-3">Temperata
+            kalkulyatori</h1>
+
+          <form class="temperature__form" autocomplete="off">
+            <div class="temperature__content row align-items-center">
+              <div class="mb-3 col col-12 col-sm-5 p-0 px-1  mb-1">
+                <label class="temperature__label form-label visually-hidden" for="temperature">Temperata
+                  kalkulyatori</label>
+                <input class="temperature__input form-control" type="text" id="temperature" aria-describedby="emailHelp"
+                  placeholder="Celsius" required>
+              </div>
+
+              <div class=" d-none d-sm-block col col-sm-2 mb-3 text-center fs-4">></div>
+
+              <div class="mb-3 col col-12 col-sm-5 p-0 px-1">
+                <select class="temperature__select form-select" aria-label="Default select example">
+                  <option selected hidden>Temperata birligi</option>
+                  <option value="Kelvin">Kelvin</option>
+                  <option value="Fahrenheit">Fahrenheit</option>
+                </select>
+              </div>
+            </div>
+            <div class="text-center text-md-end">
+              <button class="btn btn-primary" type="submit">Submit</button>
+              <button class="btn btn-danger" type="reset">Reset</button>
+            </div>
+          </form>
+
+          <div class="text-center mt-5 fs-4">
+            <output class="temperature__result"></output>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
